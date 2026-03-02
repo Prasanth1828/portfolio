@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { HiExternalLink } from 'react-icons/hi'
 
 interface Project {
   name: string

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import type { Variants } from 'framer-motion'
 import { HiLocationMarker, HiMail, HiPhone } from 'react-icons/hi'
 import { FaLinkedin } from 'react-icons/fa'
 
@@ -8,7 +9,7 @@ const Hero: React.FC = () => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -16,7 +17,7 @@ const Hero: React.FC = () => {
     },
   }
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
   }
